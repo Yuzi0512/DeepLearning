@@ -169,6 +169,17 @@
    git push origin master
    ```
 
+   如果是直接clone的空的远程库到本地， 那么可以在本地这个文件夹的路径下打开cmd：
+
+   ```
+   git add .
+   git commit -m "first commit"
+   这里就不需要再建立远程关联了，因为本来就是克隆过来的
+   但是需要告诉它主分支是哪个
+   git branch -M master	//第一次要这样做，主分支是master
+   git push -u origin master 	//第一次要这样push， 之后可以直接git push
+   ```
+
    
 
 10. 注意避坑
